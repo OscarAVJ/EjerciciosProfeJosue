@@ -1,8 +1,12 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println("Hello world!");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ingrese un numero");
+        int num = scan.nextInt();
+        System.out.println(num % 2 == 0 ? "Numero par": "Numero impar");
     }
 }
